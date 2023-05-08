@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+:root {
+    --main-color: #3867d6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #444;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 5rem;
+}
+
+body {
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #222;
+}
+
+.top {
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(./images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.koltsegvetes__cim {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.koltsegvetes__ertek {
+    font-weight: 300;
+    font-size: 4.6rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    letter-spacing: .2rem;
+}
+
+.koltsegvetes__bevetelek,
+.koltsegvetes__kiadasok {
+    padding: 1.2rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right {
+    display: flex;
+}
+
+.koltsegvetes__bevetelek {
+    margin-bottom: 1rem;
+    background-color: #28b9b5;
+}
+
+.koltsegvetes__kiadasok {
+    background-color: #ff5049;
+}
+
+.koltsegvetes__bevtelek--szoveg,
+.koltsegvetes__kiadasok--szoveg {
+    color: #444;
+    font-size: 1.3rem;
+    margin-top: .2rem;
+    text-transform: uppercase;
+}
+
+.koltsegvetes__bevetelek--ertek,
+.koltsegvetes__kiadasok--ertek {
+    letter-spacing: .1rem;
+}
+
+.koltsegvetes__bevetelek--szazalek,
+.koltsegvetes__kiadasok--szazalek {
+    width: 3.4rem;
+    font-size: 1.1rem;
+    padding: .3rem 0;
+    margin-left: 1rem;
+}
+
+.koltsegvetes__kiadasok--szazalek {
+    background-color: rgba(255, 255, 255, .2);
+    text-align: center;
+    border-radius: .3rem;
+}
+
+
+
+/* ALSÓ SZAKASZ */
+
+.hozzaad {
+    padding: 1.4rem;
+    border-bottom: .1rem solid #373737;
+    background-color: #333;
+    border-bottom: .1rem solid #666;
+}
+
+.hozzaad__kontener {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hozzaad__tipus {
+    width: 5.5rem;
+    border: .1rem solid #666;
+    height: 4.4rem;
+    font-size: 1.8rem;
+    background-color: #fff;
+    margin-right: 1rem;
+    font-weight: 300;
+    transition: border .3s;
+}
+
+.hozzaad__leiras,
+.hozzaad__ertek {
+    border: .1rem solid #666;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: 1.4rem;
+    padding: 1.2rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: .5rem;
+    transition: border .3s;
+}
+
+.hozzaad__leiras { width: 40rem; }
+.hozzaad__ertek { width: 10rem; }
+
+.hozzaad__gomb {
+    font-size: 3.5rem;
+    background: none;
+    border: none;
+    color: #28b9b5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 1rem;
+}
+
+.hozzaad__gomb:active { transform: translateY(.2rem); }
+
+.hozzaad__tipus:focus,
+.hozzaad__leiras:focus,
+.hozzaad__ertek:focus {
+    outline: none;
+    border: .1rem solid #28b9b5;
+}
+
+.hozzaad__gomb:focus { outline: none; }
+
+/*LISTÁK*/
+
+.kontener {
+    width: 100rem;
+    margin: 6rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bevetelek {
+    width: 47.5rem;
+    margin-right: 5rem;
+}
+
+.kiadasok {
+    width: 47.5rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.bevetelek__cim { color: #28b9b5; }
+.kiadasok__cim { color: #ff5049; }
+
+.tetel {
+    padding: 1.3rem;
+    border-bottom: .1rem solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tetel__ertek {
+    transition: transform .3s;
+}
+
+.tetel__szazalek {
+    margin-left: 2rem;
+    transition: transform .3s;
+    font-size: 1.1rem;
+    background-color: #ffdad9;
+    padding: .3rem;
+    width: 3.2rem;
+    text-align: center;
+}
+
+.kiadasok .tetel__ertek,
+.kiadasok .tetel__szazalek,
+.kiadasok .tetel__torol--gomb {
+    color: #28b9b5;
+}
+
+.bevetelek .tetel__ertek,
+.bevetelek .tetel__torol--gomb {
+    color: #28b9b5;
+}
+
+.tetel__torol--gomb {
+    font-size: 2.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+.tetel__torol--gomb:focus { outline: none; }
+.tetel__torol--gomb:active { transform: translateY(.2rem); }
+
+.tetel:hover .tetel__torol--gomb { display: block; }
+.tetel:hover .tetel__ertek { transform: translateX(-2rem); }
+.tetel:hover .tetel__szazalek { transform: translateX(-2rem); }
+
+
+
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .hozzaad__kontener {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.hozzaad__tipus,
+.hozzaad__leiras,
+.hozzaad__ertek {
+    margin-bottom: 1rem;
+}
+
+    .hozzaad__leiras { width: 30rem; }
+    .hozzaad__ertek { width: 30rem; }
+
+    .kontener {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bevetelek {
+        margin-right: 0rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
